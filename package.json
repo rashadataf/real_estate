@@ -1,0 +1,10 @@
+{
+  "name": "real_estate",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "a full stack project to manage real estate system",
+  "main": "index.js",
+  "author": "Rashad Ataf",
+  "license": "MIT",
+  "workspaces": ["api", "dashboard", "client"]
+}
