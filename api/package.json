@@ -1,9 +1,9 @@
 {
   "name": "api",
-  "version": "0.0.1",
+  "private": "true",
+  "version": "1.0.0",
   "description": "",
   "author": "",
-  "private": true,
   "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rimraf dist",
@@ -21,7 +21,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@monorepo/common": "1.0.0",
+    "common": "1.0.0",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",

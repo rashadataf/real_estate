@@ -6,5 +6,15 @@
   "main": "index.js",
   "author": "Rashad Ataf",
   "license": "MIT",
-  "workspaces": ["api", "dashboard", "client"]
+  "workspaces": {
+    "packages": [
+      "./*"
+    ]
+  },
+  "scripts": {
+    "start:client": "yarn workspace client dev",
+    "start:dashboard": "yarn workspace dashboard dev",
+    "start:api": "yarn workspace api start:dev",
+    "start:dev": "yarn start:client & yarn start:dashboard & yarn start:api"
+  }
 }
