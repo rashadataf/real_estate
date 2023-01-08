@@ -1,13 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import { User } from "common/types";
+
+const rashad: User = {
+  name: "Rashad Ataf",
+  email: "rashadattaf@gmail.com"
+}
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      Dashboard
+      <h1>Dashboard App</h1>
+      <p>User Name: {rashad.name}</p>
+      <p>User Email: {rashad.email}</p>
     </div>
   )
 }
